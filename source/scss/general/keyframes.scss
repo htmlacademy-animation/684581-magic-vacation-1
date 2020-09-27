@@ -27,3 +27,13 @@
     transform: translateX(0);
   }
 }
+
+@keyframes heightUp {
+  from {
+    height: 0%;
+  }
+
+  to {
+    height: 100%;
+  }
+}
