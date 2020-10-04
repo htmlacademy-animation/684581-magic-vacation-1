@@ -37,3 +37,36 @@
     height: 100%;
   }
 }
+
+@keyframes scaleUp {
+  0% {
+    color: transparent;
+    transform: scale(0);
+  }
+
+  99% {
+    color: transparent;
+  }
+
+  100% {
+    transform: scale(1);
+    color: $c-light;
+  }
+}
+
+@keyframes scaleRight {
+  0% {
+    transform: scaleX(0);
+    color: transparent;
+  }
+
+  50% {
+    color: transparent;
+    transform: scaleX(1);
+  }
+
+  100% {
+    color: $c-dark;
+    transform: scaleX(1);
+  }
+}
