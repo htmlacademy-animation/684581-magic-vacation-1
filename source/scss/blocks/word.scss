@@ -1,0 +1,20 @@
+.word {
+  .text__word > span {
+    transform: translate3d(0, 1.1em, 0);
+    display: inline-block;
+  }
+
+  &.active {
+    .text__word > span {
+      transform: translate3d(0, 0, 0);
+    }
+  }
+}
+
+.text__word {
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  padding: 2rem 0.3rem 0;
+  margin-top: -2rem;
+}

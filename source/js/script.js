@@ -10,6 +10,7 @@ import social from './modules/social.js';
 import FullPageScroll from './modules/full-page-scroll';
 import animate from './modules/animate';
 import rules from './modules/rules';
+import LetterAnimate from "./modules/letter-animate";
 // init modules
 mobileHeight();
 slider();
@@ -24,3 +25,12 @@ rules();
 
 const fullPageScroll = new FullPageScroll();
 fullPageScroll.init();
+
+const animationSloag = new LetterAnimate(`.intro__title`, 1000, `active`, `transform`);
+const animationDate = new LetterAnimate(`.intro__date`, 1000, `active`, `transform`);
+setTimeout(()=>{
+  animationSloag.runAnimation();
+}, 500);
+setTimeout(()=>{
+  animationDate.runAnimation();
+}, 1000);
