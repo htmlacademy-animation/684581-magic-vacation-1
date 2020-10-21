@@ -70,3 +70,27 @@
     transform: scaleX(1);
   }
 }
+
+@keyframes animateControlPrev {
+  0% {
+    opacity: 0;
+    transform: translate3d(-8rem, 0, 0) rotate(-180deg);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate3d(0, 0, 0) rotate(0);
+  }
+}
+
+@keyframes animateControlNext {
+  0% {
+    opacity: 0;
+    transform: translate3d(8rem, 0, 0) rotate(180deg);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate3d(0, 0, 0) rotate(0);
+  }
+}
